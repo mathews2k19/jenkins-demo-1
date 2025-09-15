@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Running build step...'
                 // Replace this with your build command if you have one
-                bat 'echo Building on Windows...'
+                sh 'echo Building on Windows...'
             }
         }
 
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'Running tests...'
                 // Replace with actual test command
-                bat 'echo Running tests...'
+                sh 'echo Running tests...'
             }
         }
 
@@ -29,7 +29,7 @@ pipeline {
             steps {
                 echo 'Deploying application...'
                 // Replace with actual deploy steps
-                bat 'echo Deploy step...'
+                sh 'echo Deploy step...'
             }
         }
     }
